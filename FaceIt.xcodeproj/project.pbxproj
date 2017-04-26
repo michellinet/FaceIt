@@ -14,6 +14,8 @@
 		DF14279D1EADD0EE00794E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF14279B1EADD0EE00794E2C /* LaunchScreen.storyboard */; };
 		DF1427A81EADD0EE00794E2C /* FaceItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427A71EADD0EE00794E2C /* FaceItTests.swift */; };
 		DF1427B31EADD0EE00794E2C /* FaceItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427B21EADD0EE00794E2C /* FaceItUITests.swift */; };
+		DF1427C21EADD1B100794E2C /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427C11EADD1B100794E2C /* FaceView.swift */; };
+		DF1427C41EB03EF600794E2C /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427C31EB03EF600794E2C /* FacialExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DF1427AE1EADD0EE00794E2C /* FaceItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1427B21EADD0EE00794E2C /* FaceItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceItUITests.swift; sourceTree = "<group>"; };
 		DF1427B41EADD0EE00794E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1427C11EADD1B100794E2C /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		DF1427C31EB03EF600794E2C /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		DF1427911EADD0EE00794E2C /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				DF1427921EADD0EE00794E2C /* AppDelegate.swift */,
 				DF1427941EADD0EE00794E2C /* ViewController.swift */,
+				DF1427C11EADD1B100794E2C /* FaceView.swift */,
+				DF1427C31EB03EF600794E2C /* FacialExpression.swift */,
 				DF1427961EADD0EE00794E2C /* Main.storyboard */,
-				DF1427991EADD0EE00794E2C /* Assets.xcassets */,
-				DF14279B1EADD0EE00794E2C /* LaunchScreen.storyboard */,
-				DF14279E1EADD0EE00794E2C /* Info.plist */,
+				DF1427C01EADD13100794E2C /* Support */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -123,6 +126,17 @@
 				DF1427B41EADD0EE00794E2C /* Info.plist */,
 			);
 			path = FaceItUITests;
+			sourceTree = "<group>";
+		};
+		DF1427C01EADD13100794E2C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DF14279E1EADD0EE00794E2C /* Info.plist */,
+				DF1427991EADD0EE00794E2C /* Assets.xcassets */,
+				DF14279B1EADD0EE00794E2C /* LaunchScreen.storyboard */,
+				DF1427921EADD0EE00794E2C /* AppDelegate.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1427951EADD0EE00794E2C /* ViewController.swift in Sources */,
+				DF1427C41EB03EF600794E2C /* FacialExpression.swift in Sources */,
 				DF1427931EADD0EE00794E2C /* AppDelegate.swift in Sources */,
+				DF1427C21EADD1B100794E2C /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
