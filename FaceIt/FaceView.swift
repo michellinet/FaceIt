@@ -13,20 +13,30 @@ import UIKit
 class FaceView: UIView {
     
     @IBInspectable
-    var scale: CGFloat = 0.9
+    var scale: CGFloat = 0.9 { didSet { setNeedsDisplay() } }
+    @IBInspectable
+    var eyesOpen: Bool = true { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var eyesOpen: Bool = true
+    var lineWidth: CGFloat = 5.0 { didSet { setNeedsDisplay() } }
     
     @IBInspectable
-    var lineWidth: CGFloat = 5.0
+    var color: UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
     
+    //1.0 is full smile, -1.0 is full frown
     @IBInspectable
-    var color: UIColor = UIColor.blue
+    var mouthCurvature: Double = -0.5 { didSet { setNeedsDisplay() } }
     
-    @IBInspectable
-    var mouthCurvature: Double = -0.5   //1.0 is full smile, -1.0 full frown
-    
+    //MARK: Handler for Pinch Gesture
+    func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer) {
+        switch pinchRecognizer.state {
+        case .changed,.ended:
+            scale *= pinchRecognizer.scale
+            pinchRecognizer.scale = 1
+        default:
+            break
+        }
+    }
     
     //MARK: Skull
     
