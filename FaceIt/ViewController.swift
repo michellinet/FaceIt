@@ -20,11 +20,28 @@ class ViewController: UIViewController {
             tapRecognizer.numberOfTapsRequired = 1
             faceView.addGestureRecognizer(tapRecognizer)
            
+            let swipeUpRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(increaseHappiness))
+            swipeUpRecognizer.direction = .up
+            faceView.addGestureRecognizer(swipeUpRecognizer)
+            
+            let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(decreaseHappiness))
+            swipeDownRecognizer.direction = .down
+            faceView.addGestureRecognizer(swipeDownRecognizer)
+            
             updateUI()
         }
     }
     
-    //MARK: Handler for Tap Gesture
+    //MARK: Handlers for Swipe
+    func increaseHappiness() {
+        expression = expression.happier
+        
+    }
+    func decreaseHappiness() {
+        expression = expression.sadder
+    }
+    
+    //MARK: Handler for Tap
     func toggleEyes(byReactingTo tapRecognizer: UITapGestureRecognizer) {
         if tapRecognizer.state == .ended {
             let eyes: FacialExpression.Eyes = (expression.eyes == .closed) ? .open : .closed
