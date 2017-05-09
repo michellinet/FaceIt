@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0153969C1EC24795006CC843 /* VCLLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0153969B1EC24795006CC843 /* VCLLoggingViewController.swift */; };
 		DF1427931EADD0EE00794E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427921EADD0EE00794E2C /* AppDelegate.swift */; };
 		DF1427951EADD0EE00794E2C /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1427941EADD0EE00794E2C /* FaceViewController.swift */; };
 		DF1427981EADD0EE00794E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1427961EADD0EE00794E2C /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0153969B1EC24795006CC843 /* VCLLoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLLoggingViewController.swift; sourceTree = "<group>"; };
 		DF14278F1EADD0EE00794E2C /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1427921EADD0EE00794E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF1427941EADD0EE00794E2C /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				DF1427941EADD0EE00794E2C /* FaceViewController.swift */,
 				DF1427C11EADD1B100794E2C /* FaceView.swift */,
 				DF1427C31EB03EF600794E2C /* FacialExpression.swift */,
+				0153969B1EC24795006CC843 /* VCLLoggingViewController.swift */,
 				DF1427961EADD0EE00794E2C /* Main.storyboard */,
 				DF1427C01EADD13100794E2C /* Support */,
 			);
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0153969C1EC24795006CC843 /* VCLLoggingViewController.swift in Sources */,
 				DF1427951EADD0EE00794E2C /* FaceViewController.swift in Sources */,
 				DF1427C41EB03EF600794E2C /* FacialExpression.swift in Sources */,
 				DF4CB9281EC16A9E00B06F03 /* EmotionsViewController.swift in Sources */,
